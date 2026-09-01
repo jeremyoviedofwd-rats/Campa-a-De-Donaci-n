@@ -1,17 +1,17 @@
 import { useAuth } from '../../context/AuthContext';
 import { useDonation } from '../../context/DonationContext';
-import { 
-  TurtleIcon, 
-  HomeIcon, 
-  HeartIcon, 
-  HandshakeIcon, 
-  UserIcon, 
-  GlobeIcon, 
-  ShieldIcon, 
-  BeachIcon, 
-  MedalIcon, 
-  RefreshIcon, 
-  KeyIcon 
+import {
+  TurtleIcon,
+  HomeIcon,
+  HeartIcon,
+  HandshakeIcon,
+  UserIcon,
+  GlobeIcon,
+  ShieldIcon,
+  BeachIcon,
+  MedalIcon,
+  RefreshIcon,
+  KeyIcon
 } from '../common/Icons';
 import './Navbar.css';
 
@@ -20,7 +20,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
   const { monedaActual, setMonedaActual, monedas } = useDonation();
 
   const navItems = [
-    { id: 'home', label: 'Inicio', Icon: HomeIcon },
+    { id: 'home', label: 'Início', Icon: HomeIcon },
     { id: 'turtles', label: 'Nuestras Tortugas', Icon: TurtleIcon },
     { id: 'donate', label: 'Donar', Icon: HeartIcon, highlight: true },
     { id: 'volunteer', label: 'Voluntariado', Icon: HandshakeIcon },
@@ -47,9 +47,8 @@ export default function Navbar({ activeTab, setActiveTab }) {
               return (
                 <li key={item.id}>
                   <button
-                    className={`nav-link-btn ${activeTab === item.id ? 'active' : ''} ${
-                      item.highlight ? 'highlight-btn' : ''
-                    }`}
+                    className={`nav-link-btn ${activeTab === item.id ? 'active' : ''} ${item.highlight ? 'highlight-btn' : ''
+                      }`}
                     onClick={() => setActiveTab(item.id)}
                   >
                     <IconComp size={18} className="nav-icon" />
