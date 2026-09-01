@@ -1,0 +1,136 @@
+.help-turtle-assistant-wrapper {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  pointer-events: auto;
+  animation: walkAcross 36s ease-in-out infinite alternate;
+}
+
+.speech-bubble {
+  background: white;
+  color: #1b4332;
+  border: 2px solid #52b788;
+  padding: 12px 32px 12px 16px;
+  border-radius: 18px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 280px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.4;
+  position: relative;
+  cursor: pointer;
+  animation: bounceBubble 2s ease-in-out infinite alternate;
+}
+
+.close-bubble-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.close-bubble-btn:hover {
+  color: #0f172a;
+}
+
+.wandering-turtle-avatar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 8px 14px 8px 8px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid #52b788;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.wandering-turtle-avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(45, 106, 79, 0.3);
+}
+
+.wandering-turtle-avatar.spinning {
+  animation: spinTurtle 1s ease-in-out;
+}
+
+.help-badge-pill {
+  background: #2d6a4f;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Flipper swimming animation */
+.flipper-front-left,
+.flipper-rear-left {
+  animation: flipperSwimLeft 0.8s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.flipper-front-right,
+.flipper-rear-right {
+  animation: flipperSwimRight 0.8s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes flipperSwimLeft {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+@keyframes flipperSwimRight {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(15deg); }
+}
+
+@keyframes bounceBubble {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+
+@keyframes spinTurtle {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes walkAcross {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(min(50vw, 400px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .help-turtle-assistant-wrapper {
+    bottom: 80px;
+    left: 10px;
+  }
+  .speech-bubble {
+    max-width: 220px;
+    font-size: 0.8rem;
+  }
+}

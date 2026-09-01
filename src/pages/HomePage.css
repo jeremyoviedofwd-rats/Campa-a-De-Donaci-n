@@ -1,0 +1,330 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.home-hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  border-radius: 0 0 32px 32px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(27, 67, 50, 0.75) 100%);
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+}
+
+.hero-badge {
+  background: rgba(82, 183, 136, 0.25);
+  border: 1px solid #52b788;
+  color: #74c69d;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.home-hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.home-hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-bottom: 32px;
+}
+
+.hero-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-hero {
+  background: #52b788;
+  color: #081c15;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(82, 183, 136, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-primary-hero:hover {
+  background: #74c69d;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(116, 198, 157, 0.5);
+}
+
+.btn-secondary-hero {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary-hero:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Impact Counters */
+.impact-counter-section {
+  max-width: 1200px;
+  margin: -60px auto 0;
+  position: relative;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.impact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.impact-card {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-icon {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.impact-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1b4332;
+  margin-bottom: 4px;
+}
+
+.impact-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+  border: none;
+}
+
+.highlight-card .impact-number {
+  color: #74c69d;
+}
+
+.highlight-card .impact-label {
+  color: #d8f3dc;
+}
+
+/* Mission Section */
+.mission-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.mission-text text-align: left {
+  text-align: left;
+}
+
+.mission-text h2 {
+  font-size: 2rem;
+  color: #1b4332;
+  margin-bottom: 16px;
+
+}
+
+.mission-text p {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.mission-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mission-checklist li {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.btn-mission {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mission-image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.mission-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.mission-img-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Newsletter */
+.newsletter-section {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.newsletter-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: white;
+  padding: 48px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+.newsletter-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.newsletter-box p {
+  color: #93c5fd;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-form button {
+  background: #10b981;
+  color: #064e3b;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background: #34d399;
+}
+
+.newsletter-success {
+  margin-top: 16px;
+  color: #34d399;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+  .home-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+}

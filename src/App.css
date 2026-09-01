@@ -1,0 +1,18 @@
+.app-main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f8fafc;
+}
+
+.app-content-area {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Global button styles */
+button {
+  font-family: inherit;
+}

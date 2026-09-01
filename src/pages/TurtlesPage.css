@@ -1,0 +1,210 @@
+.turtles-page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.turtles-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-badge {
+  background: #e8f5e9;
+  color: #1b4332;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.turtles-header h1 {
+  font-size: 2.4rem;
+  color: #1b4332;
+  margin-bottom: 12px;
+}
+
+.turtles-header p {
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto 28px;
+  font-size: 1.05rem;
+}
+
+.turtles-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.turtles-filters button {
+  background: white;
+  border: 1.5px solid #cbd5e1;
+  color: #475569;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.turtles-filters button.active,
+.turtles-filters button:hover {
+  background: #2d6a4f;
+  color: white;
+  border-color: #2d6a4f;
+}
+
+.turtles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.turtle-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.turtle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.turtle-card-img-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.turtle-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.turtle-card:hover .turtle-card-img {
+  transform: scale(1.05);
+}
+
+.turtle-status-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(6px);
+  color: #74c69d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.turtle-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+
+.turtle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.turtle-header h2 {
+  font-size: 1.5rem;
+  color: #1b4332;
+  margin: 0;
+}
+
+.turtle-age {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.turtle-species {
+  font-size: 0.85rem;
+  color: #52b788;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.turtle-desc {
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.turtle-location {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.funding-progress {
+  margin-bottom: 20px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.progress-bar-track {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #52b788 0%, #2d6a4f 100%);
+  border-radius: 4px;
+}
+
+.btn-adopt-turtle {
+  width: 100%;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-adopt-turtle:hover {
+  background: #1b4332;
+}

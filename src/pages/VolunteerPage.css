@@ -1,0 +1,189 @@
+.volunteer-page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.volunteer-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.volunteer-header h1 {
+  font-size: 2.4rem;
+  color: #1b4332;
+  margin-bottom: 12px;
+}
+
+.volunteer-header p {
+  color: #64748b;
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.campaign-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.campaign-icon {
+  font-size: 2.8rem;
+  background: #f0fdf4;
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.campaign-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.campaign-body h3 {
+  font-size: 1.25rem;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.campaign-loc,
+.campaign-date {
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.campaign-body p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 10px 0 16px;
+  line-height: 1.5;
+}
+
+.campaign-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.cupos-tag {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #b45309;
+  background: #fef3c7;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.btn-select-camp {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.volunteer-form-container {
+  background: white;
+  border-radius: 24px;
+  padding: 36px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.volunteer-form-container h2 {
+  color: #1b4332;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.volunteer-form-container p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.form-field input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.btn-submit-volunteer {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.volunteer-success {
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  color: #166534;
+  padding: 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

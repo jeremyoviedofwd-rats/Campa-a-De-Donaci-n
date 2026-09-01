@@ -1,0 +1,42 @@
+.turtle-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.water-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(224, 242, 254, 0.4) 0%, rgba(240, 253, 244, 0.1) 80%);
+}
+
+.floating-turtle {
+  position: absolute;
+  bottom: -60px;
+  color: #2d6a4f;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+  animation: floatUpSwim linear infinite;
+}
+
+@keyframes floatUpSwim {
+  0% {
+    transform: translateY(0) translateX(0) rotate(-5deg);
+  }
+  25% {
+    transform: translateY(-30vh) translateX(25px) rotate(8deg);
+  }
+  50% {
+    transform: translateY(-60vh) translateX(-20px) rotate(-6deg);
+  }
+  75% {
+    transform: translateY(-90vh) translateX(30px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(-120vh) translateX(0) rotate(-5deg);
+  }
+}
